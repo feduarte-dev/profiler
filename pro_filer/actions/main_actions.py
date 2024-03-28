@@ -77,23 +77,6 @@ def show_preview(context):
 
 
 context = {
-    "all_files": [
-        "src/__init__.py",
-        "src/app.py",
-        "src/utils/__init__.py",
-        "src/utils/__init__2.py",
-        "src/utils/__init__3.py",
-        "src/utils/__init__4.py",
-    ],
-    "all_dirs": [
-        "src",
-        "src/utils",
-        "src/utils2",
-        "src/utils3",
-        "src/utils4",
-        "src/utils5",
-    ],
+    "base_path": "/home/felipe/Trybe/Projects/python-033-python-projeto-pro-filer/images/"
 }
-
-
-show_preview(context)
+show_details(context)

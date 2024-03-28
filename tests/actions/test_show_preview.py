@@ -7,7 +7,7 @@ context = {
 
 result = (
     "Found 3 files and 2 directories\n"
-    "First 5 files: ['src/__init__.py', 'src/app.py', 'src/utils/__init__.py']\n"
+    "First 5 files: ['src/__init__.py', 'src/app.py', 'src/utils/__init__.py']\n"  # NOQA
     "First 5 directories: ['src', 'src/utils']\n"
 )
 
@@ -32,8 +32,8 @@ context2 = {
 
 result2 = (
     "Found 6 files and 6 directories\n"
-    "First 5 files: ['src/__init__.py', 'src/app.py', 'src/utils/__init__.py', 'src/utils/__init__2.py', 'src/utils/__init__3.py']\n"
-    "First 5 directories: ['src', 'src/utils', 'src/utils2', 'src/utils3', 'src/utils4']\n"
+    "First 5 files: ['src/__init__.py', 'src/app.py', 'src/utils/__init__.py', 'src/utils/__init__2.py', 'src/utils/__init__3.py']\n"  # NOQA
+    "First 5 directories: ['src', 'src/utils', 'src/utils2', 'src/utils3', 'src/utils4']\n"  # NOQA
 )
 
 
