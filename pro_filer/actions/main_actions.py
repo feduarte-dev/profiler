@@ -77,6 +77,9 @@ def show_preview(context):
 
 
 context = {
-    "base_path": "/home/felipe/Trybe/Projects/python-033-python-projeto-pro-filer/images/"
+    "all_files": [
+        "pro_filer/__init__.py",
+        "pro_filer/__main__.py",
+    ]
 }
-show_details(context)
+show_disk_usage(context)

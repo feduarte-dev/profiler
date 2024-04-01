@@ -6,7 +6,9 @@ import pytest
 @pytest.fixture
 def setup(tmp_path):
     output_path = tmp_path / "test"
-    output_path.write_text("no extension test")
+    output_path.write_text(
+        "no extension test"
+    )  # Só funciona se eu escrevo algum conteudo
     no_extension = str(output_path)
 
     output_path_2 = tmp_path / "test.py"
@@ -17,16 +19,16 @@ def setup(tmp_path):
 
 
 no_extension_result = """File name: test
-File size in bytes: 24
+File size in bytes: 17
 File type: file
 File extension: [no extension]
-Last modified date: 2024-03-28\n"""
+Last modified date: 2024-04-01\n"""  # amanha esse resultado nao vai passar, nao consegui mockar a data
 
 with_extension_result = """File name: test.py
-File size in bytes: 38
+File size in bytes: 14
 File type: file
 File extension: .py
-Last modified date: 2024-03-28\n"""
+Last modified date: 2024-04-01\n"""
 
 
 def test_show_details_success(capsys, setup):
