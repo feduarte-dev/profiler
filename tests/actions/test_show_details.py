@@ -6,9 +6,7 @@ import pytest
 @pytest.fixture
 def setup(tmp_path):
     output_path = tmp_path / "test"
-    output_path.write_text(
-        "no extension test"
-    )  # Só funciona se eu escrevo algum conteudo
+    output_path.write_text("no extension test")
     no_extension = str(output_path)
 
     output_path_2 = tmp_path / "test.py"
