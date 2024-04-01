@@ -22,7 +22,9 @@ no_extension_result = """File name: test
 File size in bytes: 17
 File type: file
 File extension: [no extension]
-Last modified date: 2024-04-01\n"""  # amanha esse resultado nao vai passar, nao consegui mockar a data
+Last modified date: 2024-04-01\n"""
+# usar uma fstring para atualizar a data dinamicamente OU usar assert in para ver se strings imutaveis estao no retorno
+# OU mockar a funcao fromtimestamp
 
 with_extension_result = """File name: test.py
 File size in bytes: 14

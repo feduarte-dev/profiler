@@ -35,8 +35,7 @@ result2 = (
     "First 5 files: ['src/__init__.py', 'src/app.py', 'src/utils/__init__.py', 'src/utils/__init__2.py', 'src/utils/__init__3.py']\n"  # NOQA
     "First 5 directories: ['src', 'src/utils', 'src/utils2', 'src/utils3', 'src/utils4']\n"  # NOQA
 )
-# vale a pena usar o parametrize ou os argumentos vao ficar muito grandes?
-# qual forma ideal de organizar essas variaveis?
+# << usar parametrize
 
 
 def test_show_preview_sucess(capsys):

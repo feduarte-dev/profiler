@@ -78,8 +78,9 @@ def show_preview(context):
 
 context = {
     "all_files": [
-        "pro_filer/__init__.py",
-        "pro_filer/__main__.py",
+        "./tests/__init__.py",
+        "./tests/__init__.py",
+        "./tests/__init__.py",
     ]
 }
-show_disk_usage(context)
+print(find_duplicate_files(context))
